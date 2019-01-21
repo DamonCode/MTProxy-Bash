@@ -174,9 +174,9 @@ fi
 
 
 # 设置开机自启并启动 MTProxy
-systemctl daemon-reload
-systemctl enable MTProxy.service
-systemctl restart MTProxy
+service daemon-reload
+service enable MTProxy.service
+service restart MTProxy
 
 # 清理安装残留
 rm -rf /tmp/MTProxy >> /dev/null 
